@@ -399,18 +399,24 @@
               </div>
               <div>
               <h3 class="title-third-footer">Subscribe</h3>
+              <span class="mail-btn">
               <lable class="modal-form-field  ">
   <span class="modal-form-input-wrapper open-form-input-desc" >
-      <input type="email" name="user-mail" placeholder="Text input" class="modal-form-input footer-br-mail" required pattern="5">
-     
-  </span>
-    </lable>
+      <input type="email" name="user-mail" modal-form-mail-footer placeholder="E-mail" class="modal-form-input-footer footer-br-mail" required pattern="5">
+       </span>
+          </lable>
+     <button type="button" class="modal-btn-footer">Subscribe
+      <svg class="footer-icon-telegr "   width="24" height="20">
+        <use href="./images/sprite.svg#icon-telegr-footer"></use>
+      </svg>
+     </button>
+    </span>
   </div>
             </div>
                   </footer>
 <!-- ================================================================backdrop================================ -->
-<!-- is-hidden -->
-<div class="backdrop  is-hidden" data-modal> 
+<!-- is-hidden -->is-hidden
+<div class="backdrop  " data-modal> 
 <div class="modal">
   <button type="button" class="modal-clase-btn" data-modal-close>
     <svg class="modal-close-btn-icon">
@@ -455,9 +461,8 @@
       class="modal-form-message " 
     placeholder="Text input" ></textarea>
      </lable>
-     
-     <input id="user_policy" type="checkbox" name="user-policy" class="modal-form-check">
-     <lable for="user_policy" class="modal-form-check-desc" >
+          <input id="user_policy" type="checkbox" name="user-policy" class="modal-form-check" checkbox>
+     <lable for="user_policy"  class="modal-form-check-desc" >
    I accept the terms and conditions of the <a href="">Privacy Policy</a>
      </lable>
      <button type="submit" class="modal-form-submit">Send</button>
