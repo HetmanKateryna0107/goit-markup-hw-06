@@ -475,7 +475,15 @@ img {
 .footer-br-mail {
   background-color: var(--dark-color);
 }
-.fmodal-form-mail-footer::placeholder {
+.modal-form-mail-footer::placeholder {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: var(--subtle-text-color);
+}
+.modal-form-mail-footer {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 12px;
@@ -490,7 +498,9 @@ img {
 }
 
 .modal-btn-footer {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 165px;
   height: 40px;
   padding: 8px 24px;
@@ -512,6 +522,7 @@ img {
 }
 .footer-icon-telegr {
   fill: var(--subtle-text-color);
+  margin-left: 16px;
 }
 /* =====================================================portfolio =====================================================*/
 
@@ -642,7 +653,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  max-width: 100%;
+  max-width: 100wh;
   min-height: 558px;
   width: 408px;
   transition: tranform 250ms var(--timing-function);
