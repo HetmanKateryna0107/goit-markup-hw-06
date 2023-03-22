@@ -63,7 +63,16 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-
+.visualiy-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 .container {
   width: 1158px;
   margin-left: auto;
@@ -139,10 +148,8 @@ img {
 
 .activ-menu-link {
   position: relative;
-  /* padding: 20px; */
 }
-.current {
-}
+
 .activ-menu-link::after {
   position: absolute;
   display: block;
@@ -693,15 +700,15 @@ img {
   color: var(--subtle-text);
 }
 .modal-form-check-desc {
+  display: flex;
+  align-items: center;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.04em;
   color: var(--subtle-text);
-  /* border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px; */
-  /* padding-left: 38px; */
+  margin-bottom: 24px;
 }
 
 .modal-form {
@@ -728,6 +735,9 @@ img {
 
 .modal-form-field {
   margin-bottom: 26px;
+}
+.modal-form-field-checkbox {
+  margin-bottom: 16px;
 }
 .modal-form-message {
   font-family: "Roboto";
@@ -776,6 +786,7 @@ img {
   letter-spacing: 0.04em;
   color: var(--text-color);
 }
+
 .modal-form-check-desc::before {
   display: block;
   content: "";
@@ -784,7 +795,32 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   cursor: pointer;
+  margin-right: 8px;
 }
 .modal-form-check:checked + .modal-form-check-desc::before {
+  background-image: url(../images/icons/click.jpg);
+  background-size: cover;
+}
+.modal-form-check:focus + .modal-form-check-desc::before {
+  outline: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+}
+.modal-form-submit {
+  display: inline-block;
+  align-self: center;
+  padding: 10px 52px;
+  border: 1px;
+  border-radius: 4px;
+  font-family: "Roboto", "sens-serif";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--subtle-text-color);
+  transition: background-color 250ms var(--timing-function);
+  background-color: var(--primaru-brand-color);
+}
+.modal-form-submit:hover,
+.modal-form-submit:focus {
   background-color: var(--pressed-state-color);
 }

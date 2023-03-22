@@ -455,15 +455,24 @@
           </svg>
   </span>
     </lable>
-     <lable class="modal-form-field">
+     <lable class="modal-form-field-checkbox">
  <span class="open-form-input-desc">Comment</span>
     <textarea name="user-massege" 
       class="modal-form-message " 
-    placeholder="Text input" ></textarea>
+    placeholder="Text input" >
+  </textarea>
      </lable>
-          <input id="user_policy" type="checkbox" name="user-policy" class="modal-form-check" checkbox>
-     <lable for="user_policy"  class="modal-form-check-desc" >
-   I accept the terms and conditions of the <a href="">Privacy Policy</a>
+          <input id="user-policy" 
+          type="checkbox" 
+          name="user-policy" 
+          class="modal-form-check
+       
+          ">
+           <!-- visualiy-hidden -->
+     <lable for="user-policy"  class="modal-form-check-desc" >
+   <p> I accept the terms and conditions of the 
+   <a href="">Privacy Policy
+   </a></p>
      </lable>
      <button type="submit" class="modal-form-submit">Send</button>
     </form>
