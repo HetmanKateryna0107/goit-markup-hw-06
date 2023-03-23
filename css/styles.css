@@ -464,7 +464,7 @@ img {
   align-items: baseline;
 }
 .modal-form-input-footer {
-  width: 100%;
+  width:264px;
   height: 40px;
   outline: none;
   border-radius: 4px;
@@ -658,7 +658,7 @@ img {
   width: 408px;
   transition: tranform 250ms var(--timing-function);
   background-color: var(--subtle-text-color);
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 }
 .backdrop.is-hidden > .modal {
   transform: translate(-50%, -50%) scale(0.6);
@@ -673,20 +673,20 @@ img {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: var(--text-footer-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: border 250ms var(--timing-function);
 }
 .modal-clase-btn:hover,
 .modal-clase-btn:focus {
-  border-color: var(--subtle-text);
+  background-color: var(--pressed-state-color);
 }
 .modal-close-btn-icon {
   transition: fill 250ms var(--timing-function);
 }
 .modal-clase-btn:hover .modal-close-btn-icon,
 .modal-clase-btn:focus .modal-close-btn-icon {
-  fill: var(--subtle-text);
+  fill: var(--subtle-text-color);
 }
 /* ===========================================modal form===================== */
 .title-backdrop {
@@ -698,7 +698,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--dark-color);
   margin-bottom: 16px;
-  margin-top: 48px;
+  /* margin-top: 48px; */
 }
 .open-form-input-desc {
   display: block;
